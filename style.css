@@ -219,6 +219,31 @@ p{
     font-size: 20px;
 }
 
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px); 
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0); 
+    }
+}
+
+.section2 .image-container,
+.section2 .text-container {
+    opacity: 0; 
+    animation: fade-in 1s ease forwards; 
+}
+
+.section2 .image-container {
+    animation-delay: 0.5s; 
+}
+
+.section2 .text-container {
+    animation-delay: 1s; 
+}
+
 
 .section3 {
     margin: 0;
