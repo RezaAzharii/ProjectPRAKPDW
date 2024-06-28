@@ -418,6 +418,7 @@ p{
 
 .button-container {
     text-align: center;
+
 }
 
 .button-about {
@@ -425,7 +426,7 @@ p{
     color: white;
     background-color: rgb(224, 234, 167);
     padding: 15px 200px;
-    border-radius: 24px;
+    border-radius: 6px;
     font-size: 30px;
     transition: background-color 0.3s ease;
     text-align: center; 
@@ -435,7 +436,9 @@ p{
 }
 
 .button-about:hover {
-    background-color: rgb(26, 33, 46);
+    color: #000;
+    background-color: rgb(255, 255, 255);
+    text-shadow: none;
 }
 
 
