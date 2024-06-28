@@ -1,0 +1,303 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree&display=swap");
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+body  {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.list ul {
+    list-style-type: none;
+    padding: 30;
+    margin: 20; 
+    position: absolute;
+    left: 10px; 
+    font-size: 24px;
+    font-family: "Figtree", sans-serif;
+}
+
+.list ul li {
+    display: inline-block;
+    margin-right: 25px;
+    color: white;
+    cursor: pointer;
+    position: relative;
+}
+
+.list ul li::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease; 
+}
+
+.list{
+    position: fixed;
+    background: #222; 
+    width: 100%; 
+    height: 80px;
+    z-index: 2; 
+    
+}
+
+.list ul li:nth-child(1):hover::before {
+    width: 100%;
+}
+
+.list ul li:nth-child(2):hover::before {
+    width: 100%;
+}
+
+.list ul li:nth-child(3):hover::before {
+    width: 100%;
+}
+
+.list ul li:nth-child(1):hover + li::before {
+    width: 0; 
+}
+
+.list ul li:nth-child(2):hover + li::before {
+    width: 0; 
+}
+
+.list ul li:nth-child(3):hover + li::before {
+    width: 0; 
+}
+
+.list ul li a {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+.section1 {
+    position: relative;
+    width: 100%;
+    height: 60rem; 
+    overflow: hidden;
+}
+
+.section2 {
+    position: relative;
+    width: 100%;
+    height: 100vh; 
+    display: flex;
+    background:linear-gradient(to top, rgb(251, 240, 208) , rgb(154, 207, 182)); 
+    justify-content: center;
+    align-items: center;
+}
+
+.section3 {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Figtree", sans-serif;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    background:linear-gradient(to top, rgb(119, 220, 165) , rgb(251, 240, 208)); 
+    height: 100vh;
+}
+
+footer{
+    position: relative;
+    width: 100%;
+    height: 29vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media (max-height:800px) {
+    footer {
+        position: static;
+    }
+    header {
+        padding-top: 40px;
+    }
+}
+
+.footer-distributed {
+    background-color: #2d2a30;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 50px 50px 50px 50px;
+}
+
+.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left {
+    width: 30%;
+}
+
+.footer-distributed h3 {
+    color: #ffffff;
+    font-size: 36px ;
+    margin: 0;
+}
+
+
+.footer-distributed h3 span {
+    color: #e0ac1c;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+    color: #ffffff;
+    margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+    color: #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center {
+    width: 35%;
+}
+
+.footer-distributed .footer-right i {
+    background-color: #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 1px 5px;
+    vertical-align: middle;
+}
+
+.footer-distributed .footer-right i.fa-envelope {
+    font-size: 17px;
+    line-height: 38px;
+}
+
+.footer-distributed .footer-right p {
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin: 0;
+    max-width: 300px;
+}
+
+.footer-distributed .footer-rigth p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.footer-distributed .footer-right p a {
+    color: #ffffff;
+    text-decoration: none;
+    ;
+}
+
+.foote:hover{
+    color: #92999f;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right {
+    width: 30%;
+    margin-right: 20px;
+}
+
+.footer-distributed .footer-company-about {
+    line-height: 20px;
+    color: #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+    display: block;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons {
+    margin-top: 2px;
+}
+
+.footer-distributed .footer-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+.footer-distributed .footer-icons a:hover {
+    background-color: #3F71EA;
+}
+
+.footer-links a:hover {
+    color: #8f9296;
+}
+
+@media (max-width: 880px) {
+    .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .footer-distributed .footer-center i {
+        margin-left: 0;
+    }
+}   
