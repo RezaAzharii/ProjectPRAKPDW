@@ -300,14 +300,16 @@ html {
     width: 100%;
     text-align: left;
     margin-left: 70px;
+    margin-right: 70px;
     font-size: 80px;
     font-weight: 700;
 }
 
 .section3 .content p {
     width: 100%;
-    text-align: left; 
     margin-bottom: 20px;
+    margin-right: 70px;
+    text-align: start;
 }
 
 .des{
@@ -315,6 +317,14 @@ html {
     text-align: left; 
     margin-bottom: 20px;
     margin-left: 70px;
+}
+
+.section3 .content .content-kiri .logo-container p{
+    width: 100%;
+    margin-bottom: 20px;
+    margin-right: 70px;
+    text-align: left;  
+    font-size: 20px;
 }
 
 .section3 .content-kiri {
@@ -580,4 +590,4 @@ footer{
     .footer-distributed .footer-center i {
         margin-left: 0;
     }
-}    
+}      
