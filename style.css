@@ -636,15 +636,31 @@ footer{
 
 .contact-section2{
     background:linear-gradient(to top, rgb(119, 220, 165) , rgb(251, 240, 208)); 
-    height: 45rem;
+    height: 50rem;
     margin: 0;
     padding: 20;
+}
+
+.cs2-desc{
     display: flex;
+    justify-content: space-between;
+    padding: 40vh;
 }
 
 .cs2-desc h2{
-    margin:0;
-    padding: 200px;
     font-size: 22px;
+    font-weight: 600;
+}
+
+.cs2-desc ul li br span{
+    width: 300px;
+    font-size: 20ox;
+}
+
+iframe{
+    width: 600px;
+    height: 500px;
+    border-radius: 20px;
+    margin-left: 400px;
 }
 
