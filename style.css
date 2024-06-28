@@ -70,7 +70,7 @@ html {
     z-index: 2; 
 }
 .list .logo{
-    width: 6%;
+    width: 4.5%;
     margin-left: 30px;
 }
 
@@ -462,9 +462,10 @@ footer{
     background-color: #2d2a30;
     box-sizing: border-box;
     width: 100%;
+    height: 40%;
     text-align: left;
     font: bold 16px sans-serif;
-    padding: 50px 50px 50px 50px;
+    padding: 5px 20px 20px 20px;
 }
 
 .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
@@ -476,14 +477,12 @@ footer{
 
 .footer-distributed .footer-left {
     width: 30%;
-    margin-bottom: 100px;
 }
 
 .footer-distributed .footer-left .footer-logo{
     width: 60%;
     margin-left: 50px;
-    margin-top: 50px;
-    padding: 20px;
+    padding: 5px;
 }
 
 
@@ -506,9 +505,10 @@ footer{
 .footer-distributed .footer-company-name {
     margin-left: 30px;
     color: #8f9296;
-    font-size: 14px;
+    font-size: 17px;
     font-weight: normal;
     margin-top: -50px;
+    margin-left: 50px;
 }
 
 /* Footer Center */
@@ -568,18 +568,6 @@ footer{
     margin-top: 15px;
     margin-left: 150px;
 }
-/* .footer-distributed .footer-right i {
-    background-color: #33383b;
-    color: #ffffff;
-    font-size: 25px;
-    width: 38px;
-    height: 38px;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 42px;
-    margin: 1px 5px;
-    vertical-align: middle;
-} */
 
 .footer-distributed .footer-icons a {
     display: inline-block;
@@ -709,7 +697,7 @@ footer{
 
 .contact-section2{
     background:linear-gradient(to top, rgb(119, 220, 165) , rgb(251, 240, 208)); 
-    height: 50rem;
+    height: 60rem;
     margin: 0;
     padding: 20;
 }
@@ -721,13 +709,35 @@ footer{
 }
 
 .cs2-desc h2{
-    font-size: 22px;
-    font-weight: 600;
+    font-size: 50px;
+    font-weight: 700;
 }
 
-.cs2-desc ul li br span{
-    width: 300px;
-    font-size: 20ox;
+.info-list {
+    width: 310px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    color: #000000;
+    text-align: left;
+}
+
+.info-list li {
+    margin-bottom: 15px;
+}
+
+.info-list li strong {
+    font-size: 20px;
+    font-weight: 700;
+    color: #000;
+}
+
+.info-list li span {
+    display: block;
+    margin-top: 5px;
+    color: #000000;
 }
 
 iframe{

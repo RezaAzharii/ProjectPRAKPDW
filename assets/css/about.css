@@ -70,7 +70,7 @@ html {
     z-index: 2; 
 }
 .list .logo{
-    width: 6%;
+    width: 4.5%;
     margin-left: 30px;
 }
 
@@ -134,10 +134,9 @@ html {
 
 .section1 img {
     position: absolute;
-    top: 0;
     left: 0;
+    margin-top: 70px;
     width: 100%;
-    height: 100%;
     object-fit: cover;
     z-index: -1; 
 }
@@ -192,6 +191,7 @@ html {
 }
 
 .image-grid {
+    margin-top: 400px;
     display: flex;
     flex-direction: column;
     gap: 100px;
@@ -274,17 +274,13 @@ html {
 
 
 .section3 {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    height: 90rem;
+    padding: 20px;
     font-family: "Open Sans", sans-serif;
-    font-weight: 300;
-    font-size: 24px;
     display: flex;
     flex-direction: column; 
     align-items: center;
     background:linear-gradient(to top, rgb(255, 255, 255) , rgb(238, 255, 218)); 
-    height: 100vh;
 }
 
 .section3 .content {
@@ -292,7 +288,8 @@ html {
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap; 
-    margin: auto; 
+    font-weight: 300;
+    font-size: 24px;
 }
 
 
@@ -300,8 +297,8 @@ html {
     width: 100%;
     text-align: left;
     margin-left: 70px;
-    margin-right: 70px;
-    font-size: 80px;
+    margin-bottom: 20px;
+    font-size: 60px;
     font-weight: 700;
 }
 
@@ -312,8 +309,8 @@ html {
     text-align: start;
 }
 
-.des{
-    width: 100%;
+.section3 .content .des{
+    width: 60%;
     text-align: left; 
     margin-bottom: 20px;
     margin-left: 70px;
@@ -438,9 +435,10 @@ footer{
     background-color: #2d2a30;
     box-sizing: border-box;
     width: 100%;
+    height: 40%;
     text-align: left;
     font: bold 16px sans-serif;
-    padding: 50px 50px 50px 50px;
+    padding: 5px 20px 20px 20px;
 }
 
 .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
@@ -452,14 +450,12 @@ footer{
 
 .footer-distributed .footer-left {
     width: 30%;
-    margin-bottom: 100px;
 }
 
 .footer-distributed .footer-left .footer-logo{
     width: 60%;
     margin-left: 50px;
-    margin-top: 50px;
-    padding: 20px;
+    padding: 5px;
 }
 
 
@@ -482,9 +478,10 @@ footer{
 .footer-distributed .footer-company-name {
     margin-left: 30px;
     color: #8f9296;
-    font-size: 14px;
+    font-size: 17px;
     font-weight: normal;
     margin-top: -50px;
+    margin-left: 50px;
 }
 
 /* Footer Center */
@@ -534,7 +531,7 @@ footer{
 .footer-distributed .center-isi p {
     display: block;
     color: #ffffff;
-    font-size: 18px;
+    font-size: 24px;
     font-weight: bold;
     margin-bottom: 20px;
     margin-left: 150px;
@@ -544,18 +541,6 @@ footer{
     margin-top: 15px;
     margin-left: 150px;
 }
-/* .footer-distributed .footer-right i {
-    background-color: #33383b;
-    color: #ffffff;
-    font-size: 25px;
-    width: 38px;
-    height: 38px;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 42px;
-    margin: 1px 5px;
-    vertical-align: middle;
-} */
 
 .footer-distributed .footer-icons a {
     display: inline-block;
@@ -590,4 +575,4 @@ footer{
     .footer-distributed .footer-center i {
         margin-left: 0;
     }
-}      
+}       
