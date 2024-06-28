@@ -1,0 +1,294 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree&display=swap");
+
+body  {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.list ul {
+    list-style-type: none;
+    padding: 30;
+    margin: 20; 
+    position: absolute;
+    top: 10px; 
+    left: 10px; 
+    font-size: 24px;
+    font-family: "Figtree", sans-serif;
+}
+
+.list ul li {
+    display: inline-block;
+    margin-right: 25px;
+    color: white;
+    cursor: pointer;
+    position: relative;
+}
+
+.list ul li::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease; 
+}
+
+.list{
+    position: fixed;
+    background: linear-gradient(to bottom, rgba(249, 227, 227, 0.49), transparent); 
+    width: 100%; 
+    height: 80px;
+    z-index: 2; 
+    
+}
+
+.list ul li:nth-child(1):hover::before {
+    width: 100%;
+}
+
+.list ul li:nth-child(2):hover::before {
+    width: 100%;
+}
+
+.list ul li:nth-child(3):hover::before {
+    width: 100%;
+}
+
+.list ul li:nth-child(1):hover + li::before {
+    width: 0; 
+}
+
+.list ul li:nth-child(2):hover + li::before {
+    width: 0; 
+}
+
+.list ul li:nth-child(3):hover + li::before {
+    width: 0; 
+}
+
+.list ul li a {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+.section1 {
+    position: relative;
+    width: 100%;
+    height: 100vh; 
+    display: flex;
+    background: rgb(154, 207, 182);
+    justify-content: center;
+    align-items: center;
+}
+
+.section2 {
+    position: relative;
+    width: 100%;
+    height: 100vh; 
+    display: flex;
+    background:linear-gradient(to top, rgb(251, 240, 208) , rgb(154, 207, 182)); 
+    justify-content: center;
+    align-items: center;
+}
+
+.section2 .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%; 
+    margin: 0 auto;
+}
+
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 4px 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.text-container {
+    flex: 1;
+    padding-left: 20px; 
+}
+
+h2{
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 100px;
+}
+p{
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+}
+
+
+.section3 {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Figtree", sans-serif;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    background:linear-gradient(to top, rgb(119, 220, 165) , rgb(251, 240, 208)); 
+    height: 100vh;
+}
+
+.container{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 1em;
+    width: 1000px;
+    height: 700px;
+    transition: all 4000ms;
+}
+
+.container:hover .box {
+    filter: grayscale(100%) opacity(24%);
+}
+
+.box{
+    border-radius: 16px;
+    position: relative;
+    background: var(--img) center center;
+    background-size: cover;
+    transition: all 300ms;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 4px 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.container .box:hover{
+    filter: grayscale(0%) opacity(100%);
+}
+
+.container:has(.box-1:hover){
+    grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
+}
+
+.container:has(.box-2:hover){
+    grid-template-columns: 1fr 3fr 1fr 1fr 1fr;
+}
+
+.container:has(.box-3:hover){
+    grid-template-columns: 1fr 1fr 3fr 1fr 1fr;
+}
+
+.container:has(.box-4:hover){
+    grid-template-columns: 1fr 1fr 1fr 3fr 1fr;
+}
+
+.container:has(.box-5:hover){
+    grid-template-columns: 1fr 1fr 1fr 1fr 3fr;
+}
+
+.box:nth-child(odd){
+    transform: translateY(-16px);
+}
+
+.box:nth-child(even){
+    transform: translateY(16px);
+}
+
+.box::after{
+    content: attr(data-text);
+    position: absolute;
+    bottom: 20px;
+    background: rgb(224, 234, 167);
+    color: white;
+    padding: 10px 10px 10px 14px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    transform: translateY(60px);
+    opacity: 0;
+    transition: all 200ms;
+}
+
+.box:hover::after{
+    transform: translateY(0);
+    opacity:  1;
+    transition-delay: 200ms;
+}
+
+.admin-popchi{
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 70px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+    padding-bottom: 90px;
+    color: rgb(0, 0, 0);
+}
+
+
+.section4 {
+    position: relative;
+    width: 100%;
+    height: 100vh; 
+    display: flex;
+    flex-direction: column; /* Mengatur tata letak vertikal */
+    justify-content: center; /* Memusatkan konten secara vertikal */
+    align-items: center; /* Memusatkan konten secara horizontal */
+    background: rgb(119, 220, 165);
+}
+
+.deskripsi {
+    text-align: center; 
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 30px;
+    padding: 80px;
+}
+
+.button-container {
+    text-align: center;
+}
+
+.button-about {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(224, 234, 167);
+    padding: 15px 200px;
+    border-radius: 24px;
+    font-size: 30px;
+    transition: background-color 0.3s ease;
+    text-align: center; 
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.button-about:hover {
+    background-color: rgb(26, 33, 46);
+}
+
+
+footer{
+    position: relative;
+    width: 100%;
+    height: 29vh; 
+    display: flex;
+    background: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+}
+
