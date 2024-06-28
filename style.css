@@ -25,10 +25,12 @@ html {
     display: none;
 }
 
+
 .list ul {
     list-style-type: none;
     padding: 30;
     margin: 20; 
+    margin-left: 80px;
     position: absolute;
     left: 10px; 
     font-size: 24px;
@@ -38,9 +40,14 @@ html {
 .list ul li {
     display: inline-block;
     margin-right: 25px;
+    font-weight: 900;
     color: white;
     cursor: pointer;
     position: relative;
+}
+
+.list ul li:hover{
+    color: #8f9296;
 }
 
 .list ul li::before {
@@ -50,17 +57,21 @@ html {
     left: 0;
     width: 0;
     height: 2px;
-    background-color: white;
+    background-color: #8f9296;
     transition: width 0.3s ease; 
 }
 
 .list{
-    position: fixed;
+    display: flex;
+    position: relative;
     background: #222; 
     width: 100%; 
     height: 80px;
     z-index: 2; 
-    
+}
+.list .logo{
+    width: 6%;
+    margin-left: 30px;
 }
 
 .list ul li:nth-child(1):hover::before {
@@ -367,7 +378,7 @@ p{
 footer{
     position: relative;
     width: 100%;
-    height: 29vh; 
+    height: 35vh; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -401,38 +412,39 @@ footer{
 
 .footer-distributed .footer-left {
     width: 30%;
+    margin-bottom: 100px;
 }
 
-.footer-distributed h3 {
-    color: #ffffff;
-    font-size: 36px ;
-    margin: 0;
+.footer-distributed .footer-left .footer-logo{
+    width: 60%;
+    margin-left: 50px;
+    margin-top: 50px;
+    padding: 20px;
 }
 
-
-.footer-distributed h3 span {
-    color: #e0ac1c;
-}
 
 /* Footer links */
 
 .footer-distributed .footer-links {
     color: #ffffff;
-    margin: 20px 0 12px;
+    margin: 20px 0 12px 150px;
 }
 
 .footer-distributed .footer-links a {
     display: inline-block;
+    justify-content: center;
+    align-items: center;
     line-height: 1.8;
     text-decoration: none;
     color: inherit;
 }
 
 .footer-distributed .footer-company-name {
+    margin-left: 30px;
     color: #8f9296;
     font-size: 14px;
     font-weight: normal;
-    margin: 0;
+    margin-top: -50px;
 }
 
 /* Footer Center */
@@ -450,8 +462,8 @@ footer{
 .footer-distributed .footer-right p {
     display: inline-block;
     color: #ffffff;
-    vertical-align: middle;
     margin: 0;
+    vertical-align: middle;
     max-width: 300px;
 }
 
@@ -478,24 +490,19 @@ footer{
     width: 30%;
 }
 
-.footer-distributed .footer-company-about {
-    line-height: 20px;
-    color: #92999f;
-    font-size: 13px;
-    font-weight: normal;
-    margin: 0;
-}
 
-.footer-distributed .footer-company-about span {
+.footer-distributed .center-isi p {
     display: block;
     color: #ffffff;
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 20px;
+    margin-left: 150px;
 }
 
 .footer-distributed .footer-icons {
-    margin-top: 2px;
+    margin-top: 15px;
+    margin-left: 150px;
 }
 /* .footer-distributed .footer-right i {
     background-color: #33383b;
