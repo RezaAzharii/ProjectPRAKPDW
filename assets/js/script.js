@@ -11,3 +11,14 @@ function showModal(imageSrc, title, description) {
     });
 }
 
+document.addEventListener("DOMContentLoaded", function() {
+    const submitButton = document.getElementById("submitButton");
+    submitButton.addEventListener("click", function() {
+      Swal.fire({
+        title: 'Success!',
+        text: 'Your request has been successfully submitted!',
+        icon: 'success',
+        confirmButtonText: 'OK'
+      });
+    });
+  });

@@ -33,7 +33,7 @@
             <input type="text" name="name" placeholder="Nama" class="form-input" required>
             <input type="email" name="email" placeholder="Email" class="form-input" required>
             <textarea name="message" placeholder="Masukan..." class="form-input" required></textarea>
-            <button type="submit">Submit</button>
+            <button type="button" onclick="Swal.fire('Success!', 'Kami akan menjawab pesan anda secepat mungkin.', 'success')">Submit</button>
         </form>
 
     </div>
@@ -97,5 +97,6 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>
