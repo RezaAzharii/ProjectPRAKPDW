@@ -705,7 +705,7 @@ footer{
     background:linear-gradient(to top, rgb(119, 220, 165) , rgb(251, 240, 208)); 
     height: 60rem;
     margin: 0;
-    padding: 20;
+    padding: 20px;
 }
 
 .cs2-desc{
