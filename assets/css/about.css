@@ -95,8 +95,57 @@ html {
 .section1 {
     position: relative;
     width: 100%;
-    height: 60rem; 
+    height: 70rem; 
     overflow: hidden;
+}
+
+.section1 img {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; 
+}
+
+.content {
+    position: relative;
+    text-align: start;
+    margin-top: 300px;
+    padding: 20px;
+    z-index: 1;
+}
+
+
+.deskripsi {
+    font-family: "Open Sans", sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 1px;
+    padding-left: 20px;
+    text-align: start;
+    text-shadow: 2px 2px 8px rgba(9, 9, 9, 0.5);
+}
+
+.deskripsi .desk-name{
+    margin-top: -10px;
+    font-size: 5rem;
+}
+
+
+.bottom-color {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(to top, rgb(154, 207, 182), transparent); 
+}
+
+.button-container {
+    position: relative;
+    text-align: center;
+    margin-top: -40px;
 }
 
 .section2 {
@@ -104,9 +153,56 @@ html {
     width: 100%;
     height: 100vh; 
     display: flex;
-    background:linear-gradient(to top, rgb(251, 240, 208) , rgb(154, 207, 182)); 
+    background: linear-gradient(to top, rgb(251, 240, 208), rgb(154, 207, 182)); 
     justify-content: center;
     align-items: center;
+}
+
+.image-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 100px; /* Jarak antara baris */
+    align-items: center; /* Pusatkan grid secara horizontal */
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px; /* Jarak antara gambar di dalam baris */
+}
+
+.image-item {
+    text-align: center;
+    width: 400px; /* Lebar gambar */
+    height: 350px; /* Tinggi gambar */
+    overflow: hidden;
+    border-radius: 8px; /* Corner radius untuk gambar */
+    position: relative;
+    box-shadow: 2px 2px 8px rgba(9, 9, 9, 0.5);
+}
+
+.image-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Gambar akan mengisi kontainer dan dipotong jika perlu */
+}
+
+.image-caption {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8); /* Warna latar belakang judul */
+    padding: 10px 0; /* Padding atas dan bawah */
+    border-radius: 0 0 8px 8px; /* Corner radius bawah */
+}
+
+.image-caption h3 {
+    margin: 0;
+    font-size: 18px; 
+    color: #000000; 
+    font-family: "Open Sans", sans-serif;
 }
 
 .section3 {
@@ -198,18 +294,6 @@ footer{
     width: 35%;
 }
 
-.footer-distributed .footer-right i {
-    background-color: #33383b;
-    color: #ffffff;
-    font-size: 25px;
-    width: 38px;
-    height: 38px;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 42px;
-    margin: 1px 5px;
-    vertical-align: middle;
-}
 
 .footer-distributed .footer-right i.fa-envelope {
     font-size: 17px;
@@ -245,7 +329,6 @@ footer{
 
 .footer-distributed .footer-right {
     width: 30%;
-    margin-right: 20px;
 }
 
 .footer-distributed .footer-company-about {
@@ -267,23 +350,36 @@ footer{
 .footer-distributed .footer-icons {
     margin-top: 2px;
 }
+/* .footer-distributed .footer-right i {
+    background-color: #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 1px 5px;
+    vertical-align: middle;
+} */
 
 .footer-distributed .footer-icons a {
     display: inline-block;
-    width: 35px;
-    height: 35px;
+    background-color: #33383b;
+    width: 38px;
+    height: 38px;
     cursor: pointer;
     border-radius: 2px;
-    font-size: 20px;
+    font-size: 25px;
     color: #ffffff;
     text-align: center;
-    line-height: 35px;
-    margin-right: 3px;
+    line-height: 42px;
+    margin-right: 1px;
     margin-bottom: 5px;
 }
 
 .footer-distributed .footer-icons a:hover {
-    background-color: #3F71EA;
+    background-color: #656d7f;
 }
 
 .footer-links a:hover {
@@ -300,4 +396,4 @@ footer{
     .footer-distributed .footer-center i {
         margin-left: 0;
     }
-}   
+} 
