@@ -103,6 +103,27 @@ html {
     color: inherit; 
 }
 
+@keyframes nav-fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px); 
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.list {
+    animation: nav-fade-in 1s ease forwards;
+}
+
+.list ul li {
+    animation: nav-fade-in 1s ease forwards;
+    animation-delay: calc(0.3s * var(--i));
+}
+
 .section1 {
     position: relative;
     width: 100%;
@@ -225,6 +246,32 @@ html {
 .custom-image-class {
     margin-bottom: 20px;
 }
+
+@keyframes fade-in-from-bottom {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); 
+    }
+}
+
+.section2 .image-item,
+.section2 .image-caption {
+    opacity: 0; 
+    animation: fade-in-from-bottom 1s ease forwards; 
+}
+
+.section2 .image-item {
+    animation-delay: 0.5s; 
+}
+
+.section2 .image-caption {
+    animation-delay: 0.8s; 
+}
+
 
 .section3 {
     margin: 0;
