@@ -190,6 +190,16 @@ html {
     align-items: center;
 }
 
+.section2 .image-item img {
+    transition: transform 0.3s ease, box-shadow 0.8s ease; 
+}
+
+.section2 .image-item:hover img {
+    transform: scale(1.05); 
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.9); 
+}
+
+
 .image-grid {
     margin-top: 400px;
     display: flex;
